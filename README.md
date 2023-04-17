@@ -31,8 +31,8 @@ Dataset source: https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yihong1120/Diabetes-Prediction-Api.git
-cd Diabetes-Prediction-Api
+git clone https://github.com/yihong1120/Diabetes-Prediction-API.git
+cd Diabetes-Prediction-API
 ```
 
 2. Install the required packages:
