@@ -46,6 +46,8 @@ pip install -r requirements.txt
 ```bash
 python train_and_save_xgb_model.py
 ```
+The chart below illustrates the SHAP computated with the train XGB_model and X_test data.
+![SHAP Plot](https://github.com/yihong1120/Diabetes-Prediction-Api/blob/main/images/shap_plot.png)
 
 4. Run the Flask application:
 
