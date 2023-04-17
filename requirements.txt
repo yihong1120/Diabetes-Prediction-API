@@ -1,0 +1,7 @@
+pandas
+# sklearn
+scikit-learn
+xgboost
+# pickle
+Flask
+requests
