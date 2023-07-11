@@ -22,9 +22,9 @@ Dataset source: https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima
 
 ## Project Structure
 
-* **'train_and_save_xgb_model.py'**: Trains an XGBoost classifier on the Pima Indians Diabetes dataset, selects the best model using grid search with cross-validation, and saves it to a file.
-* **'app.py'**: Flask application file that loads the saved model and provides an API endpoint for making predictions.
-* **'test_api.py'**: Python script to test the API by sending a POST request with input data and printing the received predictions.
+* `train_and_save_xgb_model.py`: Trains an XGBoost classifier on the Pima Indians Diabetes dataset, selects the best model using grid search with cross-validation, and saves it to a file.
+* `app.py`: Flask application file that loads the saved model and provides an API endpoint for making predictions.
+* `test_api.py`: Python script to test the API by sending a POST request with input data and printing the received predictions.
 
 ## Usage
 
