@@ -11,7 +11,7 @@ The best model is evaluated on a held-out test set and saved to a file using pic
 Dataset source: https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv
 """
 
-import pickle
+from joblib import dump
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
@@ -54,6 +54,6 @@ accuracy_best = accuracy_score(y_test, y_pred_best)
 print('Accuracy with best parameters:', accuracy_best)
 
 # Save the best model to a file using pickle
-filename = 'models/model_xgb.pkl'
-with open(filename, 'wb') as file:
-    pickle.dump(best_model, file)
+# Save the best model to a file using joblib
+filename = 'models/model_xgb.joblib'
+dump(best_model, filename)

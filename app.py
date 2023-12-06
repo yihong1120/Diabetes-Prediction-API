@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
 import numpy as np
-import pickle
+from joblib import load  
 
 app = Flask(__name__)
 
 # Load the model from file
-with open('models/model_xgb.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = load('models/model_xgb.joblib')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -38,4 +37,4 @@ def predict():
         return jsonify(error=str(e)), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

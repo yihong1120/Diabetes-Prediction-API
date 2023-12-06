@@ -3,3 +3,4 @@ scikit-learn
 xgboost
 Flask
 requests
+joblib
